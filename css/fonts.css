@@ -1,0 +1,122 @@
+/* DO NOT MOVE THIS FILE, Community Forum reads from it */
+
+/* 
+    https://web.dev/font-display/
+    font-display: swap; avoids showing the user invisible text while fonts are loading to improve lighthouse scores
+    fonts are preloaded and should show fine on moderate internet speeds and above
+*/
+
+@font-face {
+    font-family: "Maxeville Mono";
+    src:
+        url("../fonts/MaxevilleMono-Bold.woff2") format("woff2"),
+        url("../fonts/MaxevilleMono-Bold.woff") format("woff");
+    font-weight: 800;
+    font-display: swap;
+}
+
+.font-monospace {
+    font-family: "Maxeville Mono", ui-monospace, Menlo, Monaco, "Segoe UI Mono",
+        "Roboto Mono", "Oxygen Mono", "Courier New", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-brand,
+.font-brand > * {
+    font-family:
+        "Chromatic Grotesque",
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        avenir next,
+        avenir,
+        segoe ui,
+        helvetica neue,
+        helvetica,
+        Ubuntu,
+        roboto,
+        noto,
+        arial,
+        sans-serif;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        avenir next,
+        avenir,
+        segoe ui,
+        helvetica neue,
+        helvetica,
+        Ubuntu,
+        roboto,
+        noto,
+        arial,
+        sans-serif;
+}
+
+@font-face {
+    font-family: "Chromatic Compact";
+    src: url("../fonts/chromatic-compact-bold-pro.woff2") format("woff2");
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Chromatic Condensed";
+    src: url("../fonts/chromatic-condensed-bold-pro.woff2") format("woff2");
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Chromatic Grotesque";
+    src: url("../fonts/chromatic-grotesque-regular-pro.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Chromatic Grotesque";
+    src: url("../fonts/chromatic-grotesque-medium-pro.woff2") format("woff2");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Chromatic Grotesque";
+    src: url("../fonts/chromatic-grotesque-bold-pro.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Chromatic Geometric";
+    src: url("../fonts/chromatic-geometric-regular-pro.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+.font-chromatic-compact {
+    font-family: "Chromatic Compact";
+}
+
+.font-chromatic-condensed {
+    font-family: "Chromatic Condensed";
+}
+
+.font-chromatic-grotesque {
+    font-family: "Chromatic Grotesque";
+}
+
+.font-chromatic-geometric {
+    font-family: "Chromatic Geometric";
+}
